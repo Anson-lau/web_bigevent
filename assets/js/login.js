@@ -22,7 +22,7 @@ $(function(){
                return 'username length is greater than 6'; 
             }
         },
-        verifyPassword: [/^[\S]{6,12}$/, 'password length must are between 6 and 12 without any space'],
+        // verifyPassword: [/^[\S]{6,30}$/, 'password length must are between 6 and 12 without any space'],
         verifyConfirm: function(value){
             var pwd = $('.reg-box [name=password]').val();
             if(value !== pwd){
