@@ -49,12 +49,6 @@ function getUserInfo(){
                 // let username = res.data.username;
                 // let firstLetter = username[0].toUppercase();
 
-            },
-            complete: function(res){
-                if(res.responseJSON.status === 1){
-                    localStorage.removeItem('token');
-                    location.href = '/login.html';
-                }
             }
         })
 
@@ -78,6 +72,8 @@ function renderAvatar(user){
         $('.text-avatar').html(firstLetter).show();
     }
 }
+
+
 
 
 
